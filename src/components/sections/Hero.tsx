@@ -1,6 +1,5 @@
-
 import React, { useEffect, useRef } from 'react';
-import { ArrowDown, Download, GitHub, Linkedin } from 'lucide-react';
+import { ArrowDown, Download, Github, Linkedin } from 'lucide-react';
 
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -70,7 +69,7 @@ const Hero = () => {
               className="p-2 rounded-full hover:bg-secondary transition-colors"
               aria-label="GitHub"
             >
-              <GitHub size={20} />
+              <Github size={20} />
             </a>
             <a 
               href="https://linkedin.com" 
