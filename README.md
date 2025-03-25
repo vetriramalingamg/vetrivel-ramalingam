@@ -1,3 +1,4 @@
+
 # Welcome to your Lovable project
 
 ## Project info
@@ -52,7 +53,7 @@ npm run dev
 
 ## What technologies are used for this project?
 
-This project is built with .
+This project is built with:
 
 - Vite
 - TypeScript
@@ -62,8 +63,33 @@ This project is built with .
 
 ## How can I deploy this project?
 
+### Deploy with Lovable
+
 Simply open [Lovable](https://lovable.dev/projects/f857e7f3-4817-48c9-8c09-388fe927511c) and click on Share -> Publish.
+
+### Deploy to GitHub Pages
+
+To deploy this project to GitHub Pages, follow these steps:
+
+1. Push your code to a GitHub repository.
+2. Make sure your vite.config.ts has `base: './'` for production mode.
+3. Run the following commands:
+
+```sh
+# Build the project
+npm run build
+
+# Deploy to GitHub Pages
+npm run deploy
+```
+
+4. Configure your GitHub repository settings to use the gh-pages branch for GitHub Pages.
+   - Go to your repository on GitHub
+   - Navigate to Settings > Pages
+   - Select the "gh-pages" branch as the source
+   - Your site will be available at https://your-username.github.io/your-repo-name/
 
 ## I want to use a custom domain - is that possible?
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+We don't support custom domains (yet) with Lovable. If you want to deploy your project under your own domain then we recommend using Netlify or GitHub Pages with a custom domain. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+
