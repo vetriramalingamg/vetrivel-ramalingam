@@ -43,7 +43,7 @@ const Hero = () => {
             </p>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold animate-slide-up">
-              Hi, I'm <span className="text-primary">Vetrivel Ramalingam</span>
+              Hi, I'm <span className="text-primary block sm:inline">Vetrivel Ramalingam</span>
             </h1>
 
             <h2 className="text-xl md:text-2xl text-foreground/80 font-light animate-slide-up" style={{ animationDelay: '100ms' }}>
@@ -55,13 +55,13 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4 animate-fade-in" style={{ animationDelay: '400ms' }}>
-            {/* <a
+          {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4 animate-fade-in" style={{ animationDelay: '400ms' }}>
+            <a
               href="#contact"
               className="px-6 py-3 bg-primary text-primary-foreground rounded-full font-medium hover:bg-primary/90 transition-colors"
             >
               Contact Me
-            </a> */}
+            </a>
             <button
               onClick={handleDownloadResume}
               className="px-6 py-3 bg-secondary text-secondary-foreground rounded-full font-medium hover:bg-secondary/80 transition-colors flex items-center gap-2"
@@ -69,7 +69,7 @@ const Hero = () => {
               <Download size={18} />
               Resume
             </button>
-          </div>
+          </div> */}
 
           <div className="flex items-center justify-center gap-4 pt-6 animate-fade-in" style={{ animationDelay: '500ms' }}>
             <a
