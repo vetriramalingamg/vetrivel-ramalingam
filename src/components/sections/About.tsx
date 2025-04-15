@@ -55,7 +55,7 @@ const About = () => {
               Beyond architecting solutions, I excel at building relationships with clients and converting business requirements into effective technical strategies. I embrace Larry Page's philosophy: "The user is never wrong in product design," ensuring every solution I craft is intentionally designed around real-world needs while driving quantifiable success.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+            {/* <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
               <div className="flex flex-col items-center p-4 blur-card rounded-lg">
                 <Briefcase className="text-primary mb-2" size={24} />
                 <h3 className="text-xl font-semibold">X+</h3>
@@ -73,7 +73,7 @@ const About = () => {
                 <h3 className="text-xl font-semibold">Z+</h3>
                 <p className="text-sm text-muted-foreground">Certifications</p>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="relative order-1 md:order-2">

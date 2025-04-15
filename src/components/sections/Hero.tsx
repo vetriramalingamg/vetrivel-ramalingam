@@ -51,7 +51,7 @@ const Hero = () => {
             </h2>
 
             <p className="mt-6 text-lg text-foreground/70 max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: '200ms' }}>
-              I architect and implement scalable cloud solutions with a passion for solving complex technical challenges and delivering exceptional business value.
+              Turning complex challenges into solutions — I blend technical depth, business insight, and customer focus to drive innovation and impact.
             </p>
           </div>
 
@@ -73,7 +73,7 @@ const Hero = () => {
 
           <div className="flex items-center justify-center gap-4 pt-6 animate-fade-in" style={{ animationDelay: '500ms' }}>
             <a
-              href="https://github.com"
+              href="https://github.com/vetriramalingamg"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-full hover:bg-secondary transition-colors"
@@ -82,7 +82,7 @@ const Hero = () => {
               <Github size={20} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/vetrivelramalingamg"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-full hover:bg-secondary transition-colors"

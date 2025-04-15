@@ -7,12 +7,15 @@ const experiences = [
     role: 'Staff Cloud Solutions Engineer',
     company: 'Oracle Corporation',
     duration: 'Mar 2021 - Nov 2022',
-    description: 'Led customer discovery sessions, aligning cloud solutions with business requirements.',
+    description: 'Led customer discovery sessions aligning cloud solutions with business requirements. Demonstrated expertise in cloud products while designing and architecting solutions. Specialized in strategic process improvements and application platform development.',
     achievements: [
-      'Reduced healthcare new hire process time by 85% through strategic solution design',
-      'Cut user customization time by 70% with a new application discovery platform',
-      'Conducted 100+ technical sessions ensuring seamless client adoption',
-      'Delivered enterprise cloud solutions as part of multi-million-dollar deals'
+      'Integration Cloud',
+      'Content Management',
+      'Visual Builder',
+      'Oracle Cloud Infrastructure',
+      'DevOps',
+      'Solution Architecture',
+      'Technical POCs'
     ]
   },
   {
@@ -20,10 +23,15 @@ const experiences = [
     role: 'Associate Solutions Engineer',
     company: 'Oracle Corporation',
     duration: 'Jun 2018 - Feb 2021',
-    description: 'Developed cloud prototypes to onboard new enterprise customers.',
+    description: 'Developed cloud prototypes using multiple platform technologies to onboard new enterprise customers. Collaborated across functions to align solution architecture with future requirements.',
     achievements: [
-      'Aligned solution architecture with customer roadmaps through cross-functional collaboration',
-      'Won 1st place at MadHacks Hackathon with an innovative cloud-native application'
+      'Oracle Cloud Infrastructure',
+      'Digital Assistant (Chatbot)',
+      'ReactJS',
+      'NodeJS',
+      'Ionic Framework',
+      'REST APIs',
+      'UI/UX Prototyping'
     ]
   },
   {
@@ -33,29 +41,39 @@ const experiences = [
     duration: 'May 2024 - Present',
     description: 'Researching MLOps practices and MLflow for machine learning lifecycle management.',
     achievements: [
-      'Implementing MLflow to track experiments and deploy models across diverse environments'
+      'MLflow',
     ]
   },
   {
     id: 4,
-    role: 'Lead Business Consultant',
-    company: 'Eller Business Consulting',
-    duration: 'Jan 2024 - May 2024',
-    description: 'Established performance framework using continuous feedback loops.',
-    achievements: [
-      'Led team of 7 using design thinking & Six Sigma for problem-solving',
-      'Identified key insights through root cause analysis and strategic interviews',
-      'Processed 13GB of data with Python to identify critical KPIs'
-    ]
-  },
-  {
-    id: 5,
     role: 'Graduate Teaching Assistant',
     company: 'University of Arizona',
     duration: 'Aug 2024 - Dec 2024',
     description: 'Primary liaison between instructor and students for cloud computing course.',
     achievements: [
-      'Led hands-on labs for AWS, Azure, and GCP cloud platforms'
+      'AWS',
+      'Azure',
+      'GCP',
+      'Cloud Architecture',
+      'Technical Instruction',
+      'Lab Development',
+      'Student Mentoring'
+    ]
+  },
+  {
+    id: 5,
+    role: 'Lead Business Consultant',
+    company: 'Eller Business Consulting',
+    duration: 'Jan 2024 - May 2024',
+    description: 'Established performance evaluation frameworks using continuous feedback loops. Led team implementation of design thinking and Six Sigma methodologies. Applied root cause analysis and leveraged Python for data processing to identify critical performance indicators.',
+    achievements: [
+      'Python',
+      'Pandas',
+      'Project  Management',
+      'Six Sigma',
+      'Design Thinking',
+      'Data Analysis',
+      'Team Leadership'
     ]
   }
 ];
@@ -169,12 +187,19 @@ const Experience = () => {
 
                     <ul className="space-y-2">
                       {exp.achievements.map((achievement, i) => (
-                        <li key={i} className="flex items-start gap-2">
-                          <span className="h-5 w-5 mt-0.5 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                            <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
-                          </span>
-                          <span className="text-sm">{achievement}</span>
-                        </li>
+                        // <li key={i} className="flex items-start gap-2">
+                        //   <span className="h-5 w-5 mt-0.5 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                        //     <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                        //   </span>
+                        //   <span className="text-sm">{achievement}</span>
+                        // </li>
+                        <span
+                          key={i}
+                          className="badge bg-primary/10 text-primary px-4 py-2 animate-fade-in"
+                          style={{ animationDelay: `${i * 100}ms` }}
+                        >
+                          {achievement}
+                        </span>
                       ))}
                     </ul>
                   </div>

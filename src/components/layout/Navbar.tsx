@@ -7,7 +7,7 @@ import ThemeToggle from '../ui/ThemeToggle';
 const navLinks = [
   { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
-  { name: 'Projects', href: '#projects' },
+  // { name: 'Projects', href: '#projects' },
   { name: 'Experience', href: '#experience' },
   { name: 'Skills', href: '#skills' },
   { name: 'Contact', href: '#contact' },
@@ -30,8 +30,8 @@ const Navbar = () => {
     <header
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-6 md:px-8',
-        scrolled 
-          ? 'glass-effect shadow-md py-3' 
+        scrolled
+          ? 'glass-effect shadow-md py-3'
           : 'bg-transparent'
       )}
     >
@@ -76,8 +76,8 @@ const Navbar = () => {
           <nav className="px-6 py-6">
             <ul className="flex flex-col space-y-4">
               {navLinks.map((link, index) => (
-                <li 
-                  key={link.name} 
+                <li
+                  key={link.name}
                   style={{ "--index": index } as React.CSSProperties}
                   className="animate-slide-down"
                 >

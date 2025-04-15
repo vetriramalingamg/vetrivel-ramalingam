@@ -13,14 +13,14 @@ const Index = () => {
   useEffect(() => {
     // Preloading optimization
     const links = document.querySelectorAll('a[href^="#"]');
-    
+
     const handleAnchorClick = (e: Event) => {
       e.preventDefault();
       const target = e.currentTarget as HTMLAnchorElement;
       const targetId = target.getAttribute('href');
-      
+
       if (!targetId) return;
-      
+
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
         window.scrollTo({
@@ -29,11 +29,11 @@ const Index = () => {
         });
       }
     };
-    
+
     links.forEach((link) => {
       link.addEventListener('click', handleAnchorClick);
     });
-    
+
     return () => {
       links.forEach((link) => {
         link.removeEventListener('click', handleAnchorClick);
@@ -44,16 +44,16 @@ const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      
+
       <main className="flex-grow">
         <Hero />
         <About />
-        <Projects />
+        {/* <Projects /> */}
         <Experience />
         <Skills />
         <Contact />
       </main>
-      
+
       <Footer />
     </div>
   );

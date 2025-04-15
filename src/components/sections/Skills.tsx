@@ -49,9 +49,8 @@ const skillCategories = [
       { name: 'REST APIs', level: 90 },
       { name: 'JSON', level: 95 },
       { name: 'Python', level: 90 },
-      { name: 'R', level: 80 },
+      { name: 'React', level: 80 },
       { name: 'JavaScript', level: 85 },
-      { name: 'C/C++', level: 80 },
     ]
   },
   {
@@ -61,7 +60,7 @@ const skillCategories = [
     skills: [
       { name: 'Data Analysis', level: 90 },
       { name: 'Pandas', level: 85 },
-      { name: 'Oracle DB', level: 90 },
+      // { name: 'Oracle DB', level: 90 },
       { name: 'Data Visualization', level: 85 },
       { name: 'ML Lifecycle', level: 80 },
       { name: 'MLflow', level: 85 },
@@ -144,7 +143,7 @@ const Skills = () => {
                   >
                     <div className="flex justify-between items-center">
                       <span className="text-sm font-medium">{skill.name}</span>
-                      <span className="text-xs text-muted-foreground">{skill.level}%</span>
+                      {/* <span className="text-xs text-muted-foreground">{skill.level}%</span> */}
                     </div>
 
                     <div className="h-2 w-full bg-secondary rounded-full overflow-hidden">
@@ -175,7 +174,7 @@ const Skills = () => {
         <div className="blur-card rounded-xl p-6 text-center space-y-4">
           <h3 className="text-xl font-semibold">Current Learning Focus</h3>
           <div className="flex flex-wrap justify-center gap-3">
-            {['MLOps', 'Machine Learning Lifecycle', 'Cloud Architecture', 'Digital Transformation', 'Six Sigma'].map((item, i) => (
+            {['MLOps', 'Machine Learning Lifecycle', 'Cloud Architecture', 'Digital Transformation'].map((item, i) => (
               <span
                 key={i}
                 className="badge bg-primary/10 text-primary px-4 py-2 animate-fade-in"
